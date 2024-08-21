@@ -351,7 +351,7 @@ export class VaultStore extends ItemPileStore {
 			return;
 		}
 
-		if (data.type !== "Item") {
+		if (data.type !== "equipment") {
 			Helpers.custom_warning(game.i18n.format("ITEM-PILES.Warnings.DroppedIsNotItem", { type: data.type }), true)
 			return false;
 		}
